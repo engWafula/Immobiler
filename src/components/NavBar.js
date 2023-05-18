@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <div className="topBanner">
       <div>
-        <img className="logo" src={logo} alt="logo"></img>
+        <h2 className="logo" >Immobilier</h2>
       </div>
       <div className="tabs">
         <div className="selected">Places To Stay</div>

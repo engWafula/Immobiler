@@ -1,6 +1,6 @@
 import { Web3Storage } from "web3.storage";
 
-const web3storage_key = "YOUR-WEB3.STORAGE-API-TOKEN";
+const web3storage_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDdjQTcwM2E3NjZBMjAyQkJBMjNhQjQxNURhRDYwNGNiM0Q1YkJDN2EiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzczMTQ0NjUyNzQsIm5hbWUiOiJhaXJibmIifQ.xdiOgseEZg3iXSSuvT_kHAzDeDTSCSsj-jbuh7vGL_8";
 
 function GetAccessToken() {
   return web3storage_key;

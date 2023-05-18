@@ -101,11 +101,11 @@ const Rentals = () => {
   return (
     <>
       <div className="topBanner">
+      <Link to="/" className="logo1" >
         <div>
-          <Link to="/">
-            <img className="logo" src={logo} alt="logo"></img>
-          </Link>
-        </div>
+        <h2 >Immobilier</h2>
+      </div>
+        </Link>
         <div className="lrContainers">
           <Connect />
         </div>
@@ -241,7 +241,7 @@ const Rentals = () => {
           <br />
         </div>
         <div className="addRentalContent-image">
-          <img src={bg} className="add-img" alt="logo"></img>
+          <img src="https://res.cloudinary.com/ultronic-software-developers/image/upload/v1677677169/kampala-1200x675_semacr.webp" className="add-img" alt="logo"></img>
         </div>
       </div>
     </>

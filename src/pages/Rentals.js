@@ -33,11 +33,11 @@ const Rentals = () => {
     );
 
     const rentals = await AirbnbContract.getRentals();
-
+    console.log(rentals)
     const items = rentals.map((r) => {
       const imgUrl = r[7].replace(
         "ipfs://",
-        "https://gateway.pinata.cloud/ipfs/"
+        "https://ipfs.io/ipfs/"
       );
       return {
         id: Number(r[0]),
@@ -115,14 +115,16 @@ const Rentals = () => {
   useEffect(() => {
     getRentalsList();
   }, []);
-
+console.log(rentalsList)
   return (
     <>
       <div className="topBanner">
         <div>
-          <Link to="/">
-            <img className="logo" src={logo} alt="logo"></img>
-          </Link>
+        <Link to="/" className="logo1">
+        <div>
+        <h2  >Immobilier</h2>
+      </div>
+        </Link>
         </div>
         <div className="search-reminder">
           <div className="filter">{searchFilters.destination}</div>

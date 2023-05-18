@@ -85,11 +85,11 @@ const Dashboard = () => {
   return (
     <>
       <div className="topBanner">
+      <Link to="/" className="logo1">
         <div>
-          <Link to="/">
-            <img className="logo" src={logo} alt="logo"></img>
-          </Link>
-        </div>
+        <h2  >Immobilier</h2>
+      </div>
+        </Link>
         <div className="lrContainers">
           <Connect />
         </div>
@@ -131,7 +131,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="rentalsContent-box">
-          <h3 className="title">Your rentals</h3>
+          <h3 className="title">Your Houses</h3>
           <hr className="line2" />
           {rentalsList.length !== 0 ? (
             rentalsList.map((e, i) => {
